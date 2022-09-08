@@ -1,0 +1,12 @@
+.contenedor {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.carta{
+
+width: 50%;
+min-height: max-content;
+position: absolute;
+}

@@ -1,0 +1,18 @@
+.resultados{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+   
+};
+
+.resultados > *{
+    flex-basis: 40%;
+}
+
+.card{
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border: 1px solid #000;
+    
+}
