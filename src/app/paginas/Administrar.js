@@ -1,4 +1,4 @@
-import React from 'react'
+
 import React from "react";
 import DetalleGeneral from "../componentes/DetalleGeneral";
 import Detalle from '../componentes/Detalle';
@@ -38,14 +38,7 @@ export default function Administrar() {
           <hr></hr>
           <hr></hr>
         </div>
-        <fieldset>
-          <legend>Detalle</legend>
-          <DetalleGeneral plantas={plantas} />
-        </fieldset>
-        <fieldset>
-          <legend>Detalle</legend>
-          <Detalle plantas={plantas} />
-        </fieldset>
+        
       </fieldset>
 
      </>
