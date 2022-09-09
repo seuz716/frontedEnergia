@@ -4,6 +4,7 @@ import * as centralService from '../services/PlantasService';
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import { NavLink } from "react-router-dom";
 
 import "../css/carta.css";
 
@@ -25,6 +26,9 @@ export default function Detallecentral() {
           })
   }, [id]);
 
+  function handleClick(evento) {
+    evento.preventDefault();
+}
 
   return (
     <>
@@ -53,7 +57,10 @@ export default function Detallecentral() {
                     <ListGroup.Item>{id}</ListGroup.Item>
                   </ListGroup>
                 </Card.Text>
-                <Button variant="primary">Aqui es el visaje</Button>
+               
+      
+    
+                <Button type="button" className="button login__submit" variant="primary" onClick={handleClick}><NavLink to= "/" >Nueva Busqueda</NavLink></Button>
               </Card.Body>
             </div>
           </Card>

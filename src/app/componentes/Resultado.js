@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import "../css/resultados.css";
 
 
 function Resultado(props) {
@@ -9,20 +10,20 @@ function Resultado(props) {
   function handleClickCard(params) {
     params.preventDefault();
     history("/central/" + props.planta._id);
-    alert("Mostrar detalle de la central");
     console.log(params);
     console.log(params.target.value);
   }
   function handleClickBotonBusqueda(params) {
     params.preventDefault();
     params.stopPropagation();
+    history("/central/" + props.planta._id);
     console.log(params);
     console.log(params.target.value);
   }
 
   return (
     <>
-      <Card onClick={handleClickCard} style={{ width: "18rem" }}>
+      <Card className="card" onClick={handleClickCard} style={{ width: "18rem" }}>
         <Card.Img variant="top"   src="https://th.bing.com/th/id/OIP.BLo-e1Eyvg0Vjxr9VVVBrAHaD4?pid=ImgDet&rs=1" alt="poster" />
         <Card.Body>
           <Card.Title>{props.planta.name} </Card.Title>
@@ -38,8 +39,8 @@ function Resultado(props) {
               <ListGroup.Item>Longitud: {props.planta.longitude}</ListGroup.Item>
             </ListGroup>
           </Card.Text>
-          <Button onClick={handleClickBotonBusqueda} variant="primary">
-            Go somewhere
+          <Button onClick={handleClickBotonBusqueda}  variant="primary">
+            Detalles de {props.planta.name}
           </Button>
         </Card.Body>
       </Card>
