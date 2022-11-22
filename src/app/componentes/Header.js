@@ -10,7 +10,7 @@ export default function Header(props) {
     <>
     
     <div className="header">
-         <button className="button login__submit" type="button"  onClick={handleClick} name="btnini">
+         <button className="button login__submit " type="button"  onClick={handleClick} name="btnini">
       <NavLink to= "/Login/" >Iniciar Sesion</NavLink>
       </button>
       <button className="button login__submit" type="button" onClick={handleClick} name="btnfin">

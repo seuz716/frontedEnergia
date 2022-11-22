@@ -4,7 +4,6 @@ import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import "../css/resultados.css";
 
-
 function Resultado(props) {
   let history = useNavigate();
   function handleClickCard(params) {
@@ -23,10 +22,21 @@ function Resultado(props) {
 
   return (
     <>
-      <Card className="card" onClick={handleClickCard} style={{ width: "18rem" }}>
-        <Card.Img variant="top"   src="https://th.bing.com/th/id/OIP.BLo-e1Eyvg0Vjxr9VVVBrAHaD4?pid=ImgDet&rs=1" alt="poster" />
-        <Card.Body>
+      <div className="row" >
+        <div className="example-1 card" onClick={handleClickCard} style={{ width: "100" }} >
+          <div className="wrapper">
+            
+            <div className="date">
+              <span className="day">Produccion 2017 {props.planta.estimated_generation_gwh_2017} gwh </span>
+            </div>
+            <div className="data">
+              <div className="content">
+                <h1 className="title">
+                  <a href="#">{props.planta.name}</a>
+                </h1>
+                <Card.Body>
           <Card.Title>{props.planta.name} </Card.Title>
+          <Card.Img variant="top"   src="https://th.bing.com/th/id/OIP.BLo-e1Eyvg0Vjxr9VVVBrAHaD4?pid=ImgDet&rs=1" alt="poster" />
           <Card.Text>
             <ListGroup className="list-group-flush">
               
@@ -43,9 +53,15 @@ function Resultado(props) {
             Detalles de {props.planta.name}
           </Button>
         </Card.Body>
-      </Card>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </>
   );
+
+  
 }
 
 export default Resultado;

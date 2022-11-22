@@ -20,8 +20,7 @@ export function Rutas() {
           <Route path="/centrales" element={<Detallado />}></Route>
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/administrar" element={<Administrar/>}></Route>
-          
-            
+               
         </Routes>
      
     </>
