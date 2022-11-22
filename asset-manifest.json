@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/generacionElectrica/static/css/main.3867a1cf.css",
+    "main.js": "/generacionElectrica/static/js/main.dae3fb84.js",
+    "index.html": "/generacionElectrica/index.html",
+    "main.3867a1cf.css.map": "/generacionElectrica/static/css/main.3867a1cf.css.map",
+    "main.dae3fb84.js.map": "/generacionElectrica/static/js/main.dae3fb84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3867a1cf.css",
+    "static/js/main.dae3fb84.js"
+  ]
+}
