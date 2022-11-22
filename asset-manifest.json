@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/frontedEnergia/static/css/main.e8a08b94.css",
-    "main.js": "/frontedEnergia/static/js/main.8595549b.js",
+    "main.css": "/frontedEnergia/static/css/main.16e1b53b.css",
+    "main.js": "/frontedEnergia/static/js/main.a4c3f8c4.js",
     "index.html": "/frontedEnergia/index.html",
-    "main.e8a08b94.css.map": "/frontedEnergia/static/css/main.e8a08b94.css.map",
-    "main.8595549b.js.map": "/frontedEnergia/static/js/main.8595549b.js.map"
+    "main.16e1b53b.css.map": "/frontedEnergia/static/css/main.16e1b53b.css.map",
+    "main.a4c3f8c4.js.map": "/frontedEnergia/static/js/main.a4c3f8c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8a08b94.css",
-    "static/js/main.8595549b.js"
+    "static/css/main.16e1b53b.css",
+    "static/js/main.a4c3f8c4.js"
   ]
 }
