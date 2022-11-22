@@ -48,7 +48,7 @@ function ResultadoBusqueda() {
               <Form.Control
                 type="Busqueda"
                 placeholder="Busque por nombre Central eléctrica"
-                className="me-2"
+                className="me-3"
                 aria-label="Search"
                 onChange={handleChangeBarraBusqueda}
               />
@@ -56,11 +56,13 @@ function ResultadoBusqueda() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <h1>Listando Centrales electricas</h1>
+      <span> Mostrando resultados para: {busqueda} </span>
       <div className="container">
-        <div className="text-center">
-          <h1>Listando Centrales electricas</h1>
-          <span> Mostrando resultados para: {busqueda} </span>
-        </div>
+    
+       
+        
 
         <div className="resultado">
           {resultados &&

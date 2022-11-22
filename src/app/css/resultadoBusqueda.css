@@ -2,9 +2,14 @@
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    text-align: center
 
 };
 .resultados > *{
     flex-basis: 30%;
    
+}
+
+.resultado{
+    text-align: center;
 }

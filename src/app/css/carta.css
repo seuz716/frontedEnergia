@@ -2,12 +2,16 @@
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    max-height: 0.5vh;
+    padding: 1%;
 }
 
 .carta{
+padding: 1%;    
 color: black;
-width: 50%;
-min-height: max-content;
+width: 80%;
+min-height: 1vh;
+min-height: min-content;
 position: absolute;
 }
 h1{
