@@ -5,8 +5,18 @@
 }
 
 .carta{
-
+color: black;
 width: 50%;
 min-height: max-content;
 position: absolute;
+}
+h1{
+    color: azure;
+    border-color: black;
+
+}
+h2{
+    color:black;
+    border-color: blue;
+    font-size: xx-large;
 }

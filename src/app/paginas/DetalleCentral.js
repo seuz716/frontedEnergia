@@ -41,11 +41,11 @@ export default function Detallecentral() {
               <Card.Img variant="top"   src="https://th.bing.com/th/id/OIP.BLo-e1Eyvg0Vjxr9VVVBrAHaD4?pid=ImgDet&rs=1" alt="poster" />{" "}
             </div>
             
-            <div>
+            <div >
               {" "}
-              <legend> Datos central Eléctrica: {central.id} </legend>
+              <div> <h1>Datos central Eléctrica:</h1><h2>{central.name}</h2>  </div>
               <Card.Body>
-                <Card.Title>{central.name} </Card.Title>
+                <Card.Title>{central.country_long} </Card.Title>
                 <Card.Text>
                   <ListGroup className="list-group-flush">
                     <ListGroup.Item> Pais: {central.country_long}  ({central.country}) </ListGroup.Item>
