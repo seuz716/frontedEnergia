@@ -1,8 +1,6 @@
 
 import React from "react";
-import DetalleGeneral from "../componentes/DetalleGeneral";
-import Detalle from '../componentes/Detalle';
-import plantas from "../../generacionElectrica.json";
+
 
 export default function Administrar() {
   return (
@@ -12,7 +10,7 @@ export default function Administrar() {
         <div>
           <h1></h1>
           <div>
-            {" "}
+           
             <img
               alt="poster"
               src="https://th.bing.com/th/id/OIP.BLo-e1Eyvg0Vjxr9VVVBrAHaD4?pid=ImgDet&rs=1"

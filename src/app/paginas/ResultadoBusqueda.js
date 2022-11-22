@@ -34,12 +34,6 @@ function ResultadoBusqueda() {
     setBusqueda(tituloPlanta);
   }
 
-  function handleClickBotonBusqueda(params) {
-    params.preventDefault();
-    params.stopPropagation();
-    console.log(params);
-    console.log("texto de busqueda: " + params.target.value);
-  }
 
   return (
     <>

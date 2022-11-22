@@ -37,7 +37,7 @@ function Resultado(props) {
             <div className="data">
               <div className="content">
                 <h1 className="title">
-                  <a href="#">{props.planta.name}</a>
+                  {props.planta.name}
                 </h1>
                 <Card.Body>
                   <Card.Title>{props.planta.name} </Card.Title>
