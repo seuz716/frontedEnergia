@@ -28,7 +28,12 @@ export default function Detallecentral() {
 
   function handleClick(evento) {
     evento.preventDefault();
+    let history = useNavigate();
+    history("/");  
+ 
 }
+
+
 
   return (
     <>
@@ -60,7 +65,7 @@ export default function Detallecentral() {
                
       
     
-                <Button type="button" className="button login__submit" variant="primary" onClick={handleClick}><NavLink to= "/" >Nueva Busqueda</NavLink></Button>
+                <NavLink  to= "/" ><Button type="button" className="button login__submit" variant="primary">Nueva Busqueda</Button></NavLink>
               </Card.Body>
             </div>
           </Card>
