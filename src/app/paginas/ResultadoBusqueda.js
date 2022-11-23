@@ -34,36 +34,28 @@ function ResultadoBusqueda() {
     setBusqueda(tituloPlanta);
   }
 
-
   return (
     <>
       <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">
-            Busqueda de centrales de generación de energía electrica
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Form className="d-flex ">
-              <Form.Control
-                type="Busqueda"
-                placeholder="Busque por nombre Central eléctrica"
-                className="me-3"
-                aria-label="Search"
-                onChange={handleChangeBarraBusqueda}
-              />
-            </Form>
-          </Navbar.Collapse>
+          
+
+          <Navbar>
+            Busqueda de centrales energía electrica
+          
+            <input
+              className="form-control"
+              type="text"
+              onChange={handleChangeBarraBusqueda}
+              placeholder="nombre Central eléctrica"
+            ></input>
+          </Navbar>
         </Container>
       </Navbar>
 
-      <h1>Listando Centrales electricas</h1>
-      <span> Mostrando resultados para: {busqueda} </span>
-      <div className="container">
-    
-       
-        
+      <h1>Listando Centrales electricas: </h1>
 
+      <div className="container">
         <div className="resultado">
           {resultados &&
             resultados.length > 0 &&
